@@ -1,1 +1,41 @@
-<!doctype html><html><head><meta charset="utf-8"><script src="https://p.trellocdn.com/power-up.min.js"></script><link rel="stylesheet" href="./style.css"></head><body><div class="card"><div class="title">Send to PureRef — My Settings</div><div class="muted">Private settings for your Trello user.</div><div class="divider"></div><label class="row"><input id="enabled" type="checkbox"><strong>Enable Send to PureRef for me</strong></label><label class="row"><input id="includeCover" type="checkbox">Include card cover</label><label class="row"><input id="includeAttachments" type="checkbox">Include image attachments</label><label class="row"><input id="includeDescLinks" type="checkbox">Include image links in description</label><label class="row"><input id="includeHeader" type="checkbox">Create Name + Description header</label><div class="divider"></div><button id="test" class="btn secondary">TEST LOCAL BRIDGE</button><div id="status" class="status">Bridge not tested yet.</div><div class="divider"></div><button id="save" class="btn">SAVE MY SETTINGS</button></div><script src="./settings.js"></script></body></html>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Send to PureRef R02 Settings</title>
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="card">
+  <div class="title">Send to PureRef R02</div>
+  <div class="muted">Your settings are private to your Trello member.</div>
+
+  <div class="status-grid">
+    <div class="status-tile"><span>Bridge</span><strong id="bridgeState" class="state neutral">Not tested</strong></div>
+    <div class="status-tile"><span>PureRef</span><strong id="pureState" class="state neutral">Not tested</strong></div>
+    <div class="status-tile"><span>Folder</span><strong id="folderState" class="state neutral">Not tested</strong></div>
+  </div>
+
+  <label class="row"><input id="enabled" type="checkbox"> <strong>Enable Send to PureRef for me</strong></label>
+  <label class="row"><input id="includeCover" type="checkbox"> Include card cover</label>
+  <label class="row"><input id="includeAttachments" type="checkbox"> Include image attachments</label>
+  <label class="row"><input id="includeDescLinks" type="checkbox"> Include image links found in description</label>
+  <label class="row"><input id="includeHeader" type="checkbox"> Create Name + Description header</label>
+
+  <div class="divider"></div>
+  <button id="test" class="btn">TEST CONNECTION</button>
+  <button id="openLocal" class="btn secondary">OPEN LOCAL SETTINGS</button>
+  <div id="status" class="status">R02 Bridge not tested yet.</div>
+
+  <div class="permission-help" id="permissionHelp" hidden>
+    <strong>Browser permission may be blocking the Bridge.</strong>
+    <div>Allow <b>Apps on device</b> or <b>Local network access</b> for this Power-Up site, then click Test Connection again.</div>
+  </div>
+
+  <div class="divider"></div>
+  <button id="save" class="btn">SAVE MY SETTINGS</button>
+</div>
+<script src="./settings.js"></script>
+</body>
+</html>

@@ -118,7 +118,7 @@ $('run').addEventListener('click', async () => {
   } catch (e) {
     setStatus(
       'Failed: ' + e.message +
-      '\n\nMake sure START_PURE_REF_BRIDGE.bat is running.',
+      '\n\nMake sure Send to PureRef R02 is installed and the local Bridge is running. If Chrome blocks it, allow Apps on device / Local network access.',
       'err'
     );
   } finally {

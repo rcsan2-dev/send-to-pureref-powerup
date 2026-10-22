@@ -11,5 +11,5 @@ window.TrelloPowerUp.initialize({
      ];
    }).catch(function(){return [];});
  },
- 'show-settings':function(t){return t.popup({title:'Send to PureRef — My Settings',url:'./settings.html',height:520});}
+ 'show-settings':function(t){return t.popup({title:'Send to PureRef R02 — My Settings',url:'./settings.html',height:520});}
 });
